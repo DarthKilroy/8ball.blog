@@ -8,6 +8,8 @@ tags: VPN Privacy Proton Mullvad
 
 Both Promise great privacy and a good product, but who is better? 
 
+(there is a update at the bottom im doing a part two)
+
 I tried both and these are my honest thoughts. 
 
 (Proton is better)
