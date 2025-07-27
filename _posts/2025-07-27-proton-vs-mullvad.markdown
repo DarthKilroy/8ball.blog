@@ -79,4 +79,9 @@ Though please look at both, and pick for what works best for you.
 ---
 Thanks for Reading! 
 
-   
+---
+
+## Update
+
+So, i've decided im going to give Mullvad VPN another shot, i just paid for another month and im going to use it quite a bit during this time to make it more fair, ill be posting a Part 2 with this later. 
+
