@@ -83,5 +83,5 @@ Thanks for Reading!
 
 ## Update
 
-So, i've decided im going to give Mullvad VPN another shot, i just paid for another month and im going to use it quite a bit during this time to make it more fair, ill be posting a Part 2 with this later. 
+So, I've decided im going to give Mullvad VPN another shot, I just paid for another month and im going to daily drive it during this time to make it more fair, since I daily drove Proton for 2 years, ill be posting a Part 2 with this later. 
 
