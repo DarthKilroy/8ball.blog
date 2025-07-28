@@ -224,3 +224,11 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+
+copyright: 
+   # Shown at the bottom of the post 
+   license: 
+     template: This post is licensed under :LICENSE_NAME by the author. 
+     name: CC BY 4.0  - TEST
+     link: https://creativecommons.org/licenses/by/4.0/ 
