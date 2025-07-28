@@ -14,7 +14,7 @@ Hey, I'm Nate (they/them).
 
 I'm a tech support worker in a call center, mostly doing L1 work — that means I'm usually the first person someone talks to when their stuff breaks. I also mess around with Linux, tinker with my Steam Deck, and spend a lot of time googling problems no one else seems to write about.
 
-I'm neurodivergent, which definitely colors how I approach tech — and how tech sometimes doesn't play nice in return. So if you ever feel like the usual advice doesn't quite work for your brain? Yeah, same.
+I'm neurodivergent, which definitely changes how I approach tech — and can cause tech to not play nice in return. So if you ever feel like the usual advice doesn't quite work for your brain? Yeah, same.
 
 ---
 
@@ -35,7 +35,7 @@ This blog **isn't**:
 
 ## Why I’m Doing This
 
-I've been there — juggling tickets, repeating the same fix for the millionth time, looking up error codes that make me go WTF, just *how*. 
+I've been there — juggling tickets, repeating the same fix for the millionth time (telling people to unplug it and plug it back in), looking up error codes that make me go WTF, just *how*. 
 
 I started this blog because:
 - I wanted to **help others** who are doing the same job and need real answers  
@@ -49,7 +49,7 @@ I started this blog because:
 
 - Tips and tricks for tech support
 - Personal stories from working in call centers and L1 tech  - 
-  **DUE TO NDA'S ALL NAMES AND MOST PII WILL BE CHAGED OR STRIPPED DOWN** 
+  **DUE TO NDA'S ALL NAMES AND ALL PII WILL BE CHAGED OR STRIPPED DOWN** 
 - Workarounds, and command line tips ticks and hacks
 - Rants, reality checks, and some hopefully helpful advice
 
