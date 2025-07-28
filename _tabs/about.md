@@ -12,7 +12,7 @@ Hey, Im Nate, and this is a blog about tech, working in support, and the weird w
 
 Hey, I'm Nate (they/them).
 
-I'm a tech support worker in a call center, mostly doing L1 work — that means I'm usually the first person someone talks to when their stuff breaks. I also mess around with Linux, tinker with my Steam Deck, and spend a lot of time googling problems no one else seems to write about.
+I'm a tech support worker in a call center, mostly doing L1 work — that means I'm usually the first person someone talks to when their stuff breaks. I also mess around with Linux, tinker with my server network, and spend a lot of time googling problems no one else seems to write about.
 
 I'm neurodivergent, which definitely changes how I approach tech — and can cause tech to not play nice in return. So if you ever feel like the usual advice doesn't quite work for your brain? Yeah, same.
 
