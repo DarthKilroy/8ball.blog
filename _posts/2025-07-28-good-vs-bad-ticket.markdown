@@ -3,6 +3,7 @@ title: The Difference Between a Good Ticket and a Mess
 date: 2025-07-28
 layout: post
 tags: Tips, Helpdesk
+categories: Helpdesk Tips
 ---
 
 Tickets. If you work in IT, you can’t escape them. They’re the lifeblood of support — or the reason you question your career on a daily basis.
