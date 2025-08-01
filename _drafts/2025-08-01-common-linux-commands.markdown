@@ -235,6 +235,3 @@ nsturtz@bigbox ~/e/n/folder> pwd
 /home/nsturtz/example/new_folder/folder
 nsturtz@bigbox ~/e/n/folder> 
 ```
-
-
-Draft 1234
