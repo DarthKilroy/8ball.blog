@@ -1,6 +1,6 @@
 ---
 title: Commands on Linux (Part 1)
-date: 2025-08-01
+date: 2025-08-03
 layout: post
 tags: linux, ubuntu, debian, tech-support, command-line
 catagories: Command_Line Tips
@@ -235,3 +235,53 @@ nsturtz@bigbox ~/e/n/folder> pwd
 /home/nsturtz/example/new_folder/folder
 nsturtz@bigbox ~/e/n/folder> 
 ```
+
+## 6. `rm` - Remove
+[man page](https://linux.die.net/man/1/rm)
+```nsturtz@bigbox ~/example> ls
+cheese_mouse  folder/  goodnight_moon  hats_cats  hello_world  new_folder/  this_file
+nsturtz@bigbox ~/example> rm hats_cats 
+nsturtz@bigbox ~/example> ls
+cheese_mouse  folder/  goodnight_moon  hello_world  new_folder/  this_file
+nsturtz@bigbox ~/example> rm this_file cheese_mouse 
+nsturtz@bigbox ~/example> ls
+folder/  goodnight_moon  hello_world  new_folder/
+nsturtz@bigbox ~/example>
+```
+`rm` is a dangerous command, it *removes* stuff, and this isn't sending it to the trash, its gone, off the server. 
+(when you "delete" stuff and it moves to to the "trash" its just running a `mv` command to a trash folder, most often `~/.trash`)
+
+to remove a folder, you add the `-r` flag, and as with `mv` and `cp` the `-v` flag will show what exactly is going on, I also will add the `-f` (force) flag as well a lot when im running `-r` so my full command will look something like this `rm -rfv one two/ three` 
+you can also add as many items that you want in a `rm` command 
+```
+nsturtz@bigbox ~/example> ls
+folder/  goodnight_moon  hello_world  new_folder/
+nsturtz@bigbox ~/example> rm -rfv folder/
+removed 'folder/goodnight_moon'
+removed directory 'folder/'
+nsturtz@bigbox ~/example> ls -R
+.:
+goodnight_moon  hello_world  new_folder/
+
+./new_folder:
+folder/
+
+./new_folder/folder:
+goodnight_moon
+nsturtz@bigbox ~/example> tree
+.
+├── goodnight_moon
+├── hello_world
+└── new_folder
+    └── folder
+        └── goodnight_moon
+
+3 directories, 3 files
+nsturtz@bigbox ~/example> 
+```
+
+
+---
+
+Now you know how to move around a linux server and do very basic commands!!
+Thanks for reading. 
