@@ -1,6 +1,6 @@
 ---
 title: Commands on Linux (Part 1)
-date: 2025-08-03
+date: 2025-08-01
 layout: post
 tags: linux, ubuntu, debian, tech-support, command-line
 catagories: Command_Line Tips
