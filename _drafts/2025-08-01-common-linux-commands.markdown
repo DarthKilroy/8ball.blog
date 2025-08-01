@@ -13,7 +13,8 @@ If you are in tech support, you really can't escape the command line, it makes e
 In this first post here, we are going to go over the very basics of command line:
 
 
-## 1. `ls` - List - [man page](https://linux.die.net/man/1/ls)
+## 1. `ls` - List
+[man page](https://linux.die.net/man/1/ls)
 ```
 nsturtz@bigbox:/$ ls
 bin                boot   data   dev  home  lib64              lost+found  mnt  proc  run   sbin.usr-is-merged  snap  swap.img  tmp  var
@@ -119,14 +120,16 @@ nsturtz@bigbox ~> pwd
 nsturtz@bigbox ~> 
 ```
 
-## 3. `pwd` - Print Working Directory -[man page](https://linux.die.net/man/1/pwd)
+## 3. `pwd` - Print Working Directory
+[man page](https://linux.die.net/man/1/pwd)
 ```
 nsturtz@bigbox /o/N/d/n/proxy_host> pwd
 /opt/NPM/data/nginx/proxy_host
 nsturtz@bigbox /o/N/d/n/proxy_host> 
 ```
 This command is very often used after `cd`  to see what directory you are in.
-## 4. `mkdir` - Make Directory - [man page](https://linux.die.net/man/1/mkdir)
+## 4. `mkdir` - Make Directory 
+[man page](https://linux.die.net/man/1/mkdir)
 ```
 nsturtz@bigbox ~/example> ls
 nsturtz@bigbox ~/example> mkdir 1
@@ -168,7 +171,8 @@ nsturtz@bigbox ~/e/1/2/3/4> pwd
 nsturtz@bigbox ~/e/1/2/3/4> 
 ```
 
-## 5. `cp` - Copy - [man page](https://linux.die.net/man/1/cp)
+## 5. `cp` - Copy 
+[man page](https://linux.die.net/man/1/cp)
 
 ```
 nsturtz@bigbox ~/example> ls
