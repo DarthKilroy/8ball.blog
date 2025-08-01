@@ -1,5 +1,5 @@
 ---
-title: Most Common Commands on Linux
+title: Commands on Linux (Part 1)
 date: 2025-08-01
 layout: post
 tags: linux, ubuntu, debian, tech-support, command-line
@@ -8,6 +8,9 @@ catagories: Command_Line Tips
 ---
 
 If you are in tech support, you really can't escape the command line, it makes everything so much easier. We are going to dive into a lot of them, explore what they do and look at a example of each command ran from my Server (Running Ubuntu 24 SE) 
+
+
+In this first post here, we are going to go over the very basics of command line:
 
 
 ## 1. `ls` - List - [man page](https://linux.die.net/man/1/ls)
@@ -67,6 +70,17 @@ nsturtz@bigbox:/opt$
 ```
 This is also a extremely common linux command, you need to use it to move around directories. 
 
+- Tip: If you just type `cd` you will be taken back to your home directory 
+
+```
+nsturtz@bigbox ~/e/1/2/3/4> pwd 
+/home/nsturtz/example/1/2/3/4
+nsturtz@bigbox ~/e/1/2/3/4> cd 
+nsturtz@bigbox ~> pwd
+/home/nsturtz
+nsturtz@bigbox ~> 
+```
+
 ## 3. `pwd` - Print Working Directory -[man page](https://linux.die.net/man/1/pwd)
 ```
 nsturtz@bigbox /o/N/d/n/proxy_host> pwd
@@ -74,3 +88,44 @@ nsturtz@bigbox /o/N/d/n/proxy_host> pwd
 nsturtz@bigbox /o/N/d/n/proxy_host> 
 ```
 This command is very often used after `cd`  to see what directory you are in.
+## 4. `mkdir` - Make Directory - [man page](https://linux.die.net/man/1/mkdir)
+```
+nsturtz@bigbox ~/example> ls
+nsturtz@bigbox ~/example> mkdir 1
+nsturtz@bigbox ~/example> ls
+1/
+nsturtz@bigbox ~/example> cd 1
+nsturtz@bigbox ~/e/1> pwd
+/home/nsturtz/example/1
+nsturtz@bigbox ~/e/1> 
+```
+This simply creates a folder (directory). 
+I quite often use the `-p` flag on it so it will create folders sub-folders that are not there but needed. 
+```
+nsturtz@bigbox ~/example> pwd 
+/home/nsturtz/example
+nsturtz@bigbox ~/example> ls 
+nsturtz@bigbox ~/example> mkdir 1/2/3/4
+mkdir: cannot create directory ‘1/2/3/4’: No such file or directory
+nsturtz@bigbox ~/example [1]> mkdir -p 1/2/3/4
+nsturtz@bigbox ~/example> ls
+1/
+nsturtz@bigbox ~/example> ls -R 
+.:
+1/
+
+./1:
+2/
+
+./1/2:
+3/
+
+./1/2/3:
+4/
+
+./1/2/3/4:
+nsturtz@bigbox ~/example> cd 1/2/3/4/
+nsturtz@bigbox ~/e/1/2/3/4> pwd
+/home/nsturtz/example/1/2/3/4
+nsturtz@bigbox ~/e/1/2/3/4> 
+```
