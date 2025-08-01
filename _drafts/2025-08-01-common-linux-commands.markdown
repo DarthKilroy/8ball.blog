@@ -1,6 +1,6 @@
 ---
 title: Commands on Linux (Part 1)
-date: 2025-08-01
+date: 2025-08-03
 layout: post
 tags: linux, ubuntu, debian, tech-support, command-line
 catagories: Command_Line Tips
@@ -238,7 +238,8 @@ nsturtz@bigbox ~/e/n/folder>
 
 ## 6. `rm` - Remove
 [man page](https://linux.die.net/man/1/rm)
-```nsturtz@bigbox ~/example> ls
+```
+nsturtz@bigbox ~/example> ls
 cheese_mouse  folder/  goodnight_moon  hats_cats  hello_world  new_folder/  this_file
 nsturtz@bigbox ~/example> rm hats_cats 
 nsturtz@bigbox ~/example> ls
