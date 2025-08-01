@@ -9,9 +9,9 @@ catagories: Command_Line Tips
 
 If you are in tech support, you really can't escape the command line, it makes everything so much easier. We are going to dive into a lot of them, explore what they do and look at a example of each command ran from my Server (Running Ubuntu 24 SE) 
 
+Also included in as many of these as I could is the Manual page (man page): https://linux.die.net/man/ (not affiliated)
 
 In this first post here, we are going to go over the very basics of command line:
-
 
 ## 1. `ls` - List
 [man page](https://linux.die.net/man/1/ls)
