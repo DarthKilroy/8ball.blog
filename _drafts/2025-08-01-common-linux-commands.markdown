@@ -58,6 +58,44 @@ nsturtz@bigbox:/$
 ```
 this shows the Permissions in RWX format (`drwxrwxrwx`) - who owns it `jellyfin` -  the size (in human readable format (`-h`)  date and time created/lasted modified  and the name.
 
+the `-R` flag shows it recursively
+```
+nsturtz@bigbox ~/example> pwd
+/home/nsturtz/example
+nsturtz@bigbox ~/example> ls -R 
+.:
+folder/  goodnight_moon  hello_world  new_folder/
+
+./folder:
+goodnight_moon
+
+./new_folder:
+folder/
+
+./new_folder/folder:
+goodnight_moon
+nsturtz@bigbox ~/example> 
+``` 
+
+Though, I personally prefer `tree` for this, just makes it easier to read, but that is not installed by default. 
+
+```
+nsturtz@bigbox ~/example> pwd
+/home/nsturtz/example
+nsturtz@bigbox ~/example> tree
+.
+├── folder
+│   └── goodnight_moon
+├── goodnight_moon
+├── hello_world
+└── new_folder
+    └── folder
+        └── goodnight_moon
+
+4 directories, 4 files
+nsturtz@bigbox ~/example> 
+```
+
 ## 2. `cd` - Change Directory 
 ```
 nsturtz@bigbox:/$ ls 
@@ -128,4 +166,68 @@ nsturtz@bigbox ~/example> cd 1/2/3/4/
 nsturtz@bigbox ~/e/1/2/3/4> pwd
 /home/nsturtz/example/1/2/3/4
 nsturtz@bigbox ~/e/1/2/3/4> 
+```
+
+## 5. `cp` - Copy - [man page](https://linux.die.net/man/1/cp)
+
+```
+nsturtz@bigbox ~/example> ls
+hello_world
+nsturtz@bigbox ~/example> cat hello_world 
+hello 1234
+nsturtz@bigbox ~/example> cp hello_world goodnight_moon
+nsturtz@bigbox ~/example> ls
+goodnight_moon  hello_world
+nsturtz@bigbox ~/example> cat goodnight_moon 
+hello 1234
+nsturtz@bigbox ~/example> ls
+goodnight_moon  hello_world
+nsturtz@bigbox ~/example> mkdir folder
+nsturtz@bigbox ~/example> ls folder/
+nsturtz@bigbox ~/example> ls
+folder/  goodnight_moon  hello_world
+nsturtz@bigbox ~/example> cp goodnight_moon folder/
+nsturtz@bigbox ~/example> ls folder/
+goodnight_moon
+nsturtz@bigbox ~/example> cat folder/goodnight_moon 
+hello 1234
+nsturtz@bigbox ~/example> ls -R
+.:
+folder/  goodnight_moon  hello_world
+
+./folder:
+goodnight_moon
+nsturtz@bigbox ~/example> 
+```
+`cp` or Copy does exactly what it sounds like, it copies stuff. 
+In my example above I started with a file `hello_world` and it had the text `hello 1234` inside of it.  I copied the file to `goodnight_moon` and it had the same text inside as `hello_world` 
+
+with the `-r` flag it allows you to copy recursively, the `-v` flag is "verbose", this  is a extremely common flag, this will show you what its doing and print out more debug information onto your screen. 
+
+```
+nsturtz@bigbox ~/example> ls
+folder/  goodnight_moon  hello_world
+nsturtz@bigbox ~/example> ls folder/
+goodnight_moon
+nsturtz@bigbox ~/example> mkdir new_folder
+nsturtz@bigbox ~/example> ls
+folder/  goodnight_moon  hello_world  new_folder/
+nsturtz@bigbox ~/example> cp -rv folder/ new_folder/
+'folder/' -> 'new_folder/folder'
+'folder/goodnight_moon' -> 'new_folder/folder/goodnight_moon'
+nsturtz@bigbox ~/example> ls
+folder/  goodnight_moon  hello_world  new_folder/
+nsturtz@bigbox ~/example> cd new_folder/
+nsturtz@bigbox ~/e/new_folder> pwd
+/home/nsturtz/example/new_folder
+nsturtz@bigbox ~/e/new_folder> ls
+folder/
+nsturtz@bigbox ~/e/new_folder> cd folder/
+nsturtz@bigbox ~/e/n/folder> ls 
+goodnight_moon
+nsturtz@bigbox ~/e/n/folder> cat goodnight_moon 
+hello 1234
+nsturtz@bigbox ~/e/n/folder> pwd 
+/home/nsturtz/example/new_folder/folder
+nsturtz@bigbox ~/e/n/folder> 
 ```
